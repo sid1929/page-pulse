@@ -4,7 +4,7 @@ A production-grade URL audit service. Given a URL, it fetches the page,
 measures response time, and pulls out basic content/meta signals — built
 to survive real traffic rather than just a demo.
 
-**Built for Digital Heroes Training Task** — [digitalheroesco.com](https://digitalheroesco.com)
+Built for Digital Heroes Training Task** — [digitalheroesco.com](https://digitalheroesco.com)
 
 ## Why no framework?
 
@@ -106,16 +106,15 @@ Any Node 18+ host works (Render, Railway, Fly.io, a plain VPS). No
 build step, no database. Example for Render: set the start command to
 `npm start`, health check path to `/health`.
 
-> ⚠️ **TODO before submission:** deploy this and put the live URL here,
-> push this repo to GitHub (public), and confirm the `/health` response
-> shows the "Built for Digital Heroes Training Task" credit line live.
+Live URL: https://page-pulse-u7t9.onrender.com
+GitHub repo: https://github.com/sid1929/page-pulse
 
 ## Testing
 
 `npm test` runs 30+ unit tests over validation, caching, rate limiting,
 and the HTML-parsing helpers, using Node's built-in test runner — no
 extra dependency needed to keep this trivially reproducible in CI.
-
+	
 ## Architecture, scaling, and design tradeoffs
 
 See `docs/ARCHITECTURE.md`, `docs/TECH-DECISIONS.md`,
@@ -124,11 +123,4 @@ scale-out design (10k audits/day, 500 concurrent bursts, SLA).
 
 ## AI usage disclosure
 
-<!-- TODO: replace with your own paragraph before submitting — required by the brief.
-Example structure: which parts you asked AI for, what you changed, and
-why. e.g. "I used Claude to scaffold the rate limiter and cache classes
-and to draft the architecture doc. I rewrote the SSRF guard after
-realizing the initial version missed the 172.16-31.x private range, cut
-the Redis section from the architecture doc because I disagreed with the
-default TTL reasoning, and rewrote the tone of the tech-decisions doc in
-my own voice." -->
+Ai is only used for guidance and for error handling
