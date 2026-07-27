@@ -124,6 +124,7 @@ scale-out design (10k audits/day, 500 concurrent bursts, SLA).
 
 ## AI usage disclosure
 
+Ai usage is only for the guidance and for error handling
 <!-- TODO: replace with your own paragraph before submitting — required by the brief.
 Example structure: which parts you asked AI for, what you changed, and
 why. e.g. "I used Claude to scaffold the rate limiter and cache classes
