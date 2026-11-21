@@ -5,7 +5,7 @@ const logger = require('./utils/logger');
 
 const PORT = process.env.PORT || 4000;
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   logger.info('page-pulse listening', { port: PORT });
 });
 
