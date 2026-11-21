@@ -87,6 +87,30 @@ function handleHealth(req, res, requestId) {
 }
 
 const server = http.createServer(async (req, res) => {
+
+  const allowedOrigin =
+    process.env.FRONTEND_ORIGIN || 'http://localhost:3000';
+
+  const origin = req.headers.origin;
+
+  if (origin === allowedOrigin) {
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader(
+      'Access-Control-Allow-Methods',
+      'GET, POST, OPTIONS'
+    );
+    res.setHeader(
+      'Access-Control-Allow-Headers',
+      'Content-Type, X-Request-ID'
+    );
+  }
+
+  if (req.method === 'OPTIONS') {
+    res.writeHead(origin === allowedOrigin ? 204 : 403);
+    return res.end();
+  }
+
   const requestId = req.headers['x-request-id'] || crypto.randomUUID();
   req.clientIp = getClientIp(req);
   const startedAt = Date.now();
