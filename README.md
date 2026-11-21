@@ -1,10 +1,27 @@
+# Page Pulse – Website Security Assessment Platform
+
+<p align="center">
+  <a href="https://page-pulse-two-gilt.vercel.app">
+    <strong>🚀 LIVE DEMO — TRY PAGE PULSE</strong>
+  </a>
+</p>
+
+<p align="center">
+  A full-stack website security assessment platform that analyzes website security configurations and identifies potential vulnerabilities.
+</p>
+
+**Live Demo:** https://page-pulse-two-gilt.vercel.app
+
+**Backend API:** https://page-pulse-api-lmw5.onrender.com
+
+**GitHub:** https://github.com/sid1929/page-pulse
+
+---
 # Page Pulse
 
 A production-grade URL audit service. Given a URL, it fetches the page,
 measures response time, and pulls out basic content/meta signals — built
 to survive real traffic rather than just a demo.
-
-Built for Digital Heroes Training Task** — [digitalheroesco.com](https://digitalheroesco.com)
 
 ## Why no framework?
 
