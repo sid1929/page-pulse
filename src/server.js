@@ -3,7 +3,7 @@
 const { server } = require('./app');
 const logger = require('./utils/logger');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 server.listen(PORT, () => {
   logger.info('page-pulse listening', { port: PORT });
